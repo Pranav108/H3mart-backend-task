@@ -4,7 +4,7 @@
 
 ## Project Description 📑
 
-- This project is a backend task for
+- This project is a backend part for h3Mart internship task.
 - In the H3Mart.xl file there are two columns one is product name and another is price column which is empty. Create a REST API where we upload this product file and in the response you have to return the same excel file with product price.
 - For price You have to call an API to get product price for that product_id.
 - End point example: `https://api.storerestapi.com/products/<product_id>`
