@@ -11,6 +11,6 @@ module.exports = async function (product_list) {
     } catch (error) {
       console.error(error);
     }
-  console.log(ans);
+  // console.log(ans);
   return ans;
 };

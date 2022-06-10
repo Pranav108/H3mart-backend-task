@@ -38,7 +38,14 @@ app.get("/", async (req, res) => {
     valueInputOption: "USER_ENTERED",
     requestBody: { values: priceList },
   });
-  res.send(getRows.data);
+
+  //Read rows from updated spraedSheet
+  const getUpdatedData = await googleSheets.spreadsheets.values.get({
+    auth,
+    spreadsheetId,
+    range: "Sheet1!A2:B10",
+  });
+  res.send(getUpdatedData.data);
 });
 
 app.listen(1024, (req, res) => console.log("running on 1024...."));
